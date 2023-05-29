@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Victor Hernandez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@500&display=swap'); </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-name">
+            <h3>
+                Victor's Portfolio
+            </h3>
+        </div>
+        <div id="navbar-btns">
+            <button class="nav-btn" onclick="document.location.href='#home';return false;" >Home</button>
+            <button class="nav-btn" onclick="document.location.href='#aboutme';return false;">About Me</button>
+            <button class="nav-btn" onclick="document.location.href='#projects';return false;">Projects</button>
+            <button class="nav-btn" onclick="document.location.href='#resume';return false;">Resume</button>
+        </div>
+    </div>
+    <div id="home">
+        <img id="portrait" src="portrait.jpg">
+        <div>
+            <h1>I'm Victor,</h1>
+            <p>a developer.</p>
+        </div>
+    </div>
+    <div id="aboutme">
+        <hr>
+        <div class="section-title">
+            <h1><u>About me</u></h1>
+        </div>
+        <div id="aboutme-content">
+            <img id="drip_pic" src="pumpkin_pic.jpg">
+            <div id="aboutme-text">
+                <p>
+                    My name is Victor Ivan Hernandez Barajas and I am a 3rd year at the University of California, Irvine. I am majoring in 
+                    <u>Computer Science</u> and I aspire to become a Software Engineer after I graduate from college. Within Software Engineering,
+                    I am interested in pursuing web development or mobile development since I enjoy creating easy to use interfaces. 
+                    <br>
+                    <br>
+                    Background: 
+                    <br>
+                    I am originally from Mexico but moved to the US when I was 2 years old. Ever since then, I have been residing in San
+                    Mateo, CA which is located in the bay area. I am a first-gen college student who will be the first in my family to graduate college
+                    in my family. Im extremely proud of everything I have accomplished so far and I am hungry to learn new things.
+                    <br>
+                    <br>
+                    Feel free to connect with me on social media!
+                </p>
+                <a href="https://www.linkedin.com/in/victorhernandez10/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/victor.hrnandez/" class="fa fa-instagram"></a>
+                <a href="https://github.com/hernandezv0110" class="fa fa-github"></a>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <hr>
+        <div class="section-title">
+            <h1><u>Projects</u></h1>
+        </div>
+        <div id="projects-content">
+            <!-- connect four, sleep app, spotify, google app, IOS Flashcard app -->
+            <div class="project-section">
+                <div class="project-visual">
+                    <img id="google-pic" src="betterbudget.png">
+                    <a id="google-link" href="https://mywebsite-246421.wn.r.appspot.com/">BetterBudget Website</a>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Better Budget is a web application my team developed during my time in Google's Software Product Sprint. I developed the Rent vs Buy
+                         calculator which is meant to better inform house buyers whether they should buy or rent a home depending on the time they plan to 
+                         stay at the property. One of the most interesting features of Better Budget is that it is capable of translating all the text on 
+                         the page into one of five different languages using Google's translate api. This makes access easier for non-english speakers so 
+                         that they too can make use of Better Budget.
+                    </p>
+                    <ul>
+                        <li>Built a financial literacy website for non-english speakers during my time participating in Google’s Software Product Sprint</li>
+                        <li>Worked primarily with Front-end development, but also exposed to Back-end using Java servlets</li>
+                        <li>Used Google Charts and Google Translate APIs to improve the interactivity of the website</li>
+                        <li>Responsible for the implementation of the Rent vs Buy Calculator</li>
+                    </ul>
+                    <p class="project-skills">
+                        Technologies used: HTML, CSS, JavaScript, Google Translate and Charts API
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="project-separator">
+            <h1>*****</h1>
+        </div>
+        <div class="project-section">
+            <div class="project-visual">
+                <video id="connect-four-vid" controls>
+                    <source src="FinalGestureDEMO.mp4" type="video/mp4">
+                </video>
+                <h3>Connect Four with Hand Gestures</h3>
+            </div>
+            <div class="project-description">
+                <p>
+                    Connect Four is a web application based game that is completely controlled with hand gestures. I used the Handtrack.js library to 
+                    detect unique hand gestures that corresponded with a particular column. The game is started with two open hands and the red player always
+                    starts the game. After the red player places its tile with two closed hands, the top tile is automatically switched to yellow indicating
+                    that it is the yellow players turn. The game keeps going until there is a winner, which stops the game. The body of the html page changes its
+                    color to the winning player's color. 
+                </p>
+                <ul>
+                    <li>Built a connect four game using hand gestures</li>
+                    <li>Worked primarily with Front-end development</li>
+                    <li>Used Handtrack.js library to be able to detect hand gestures</li>
+                </ul>
+                <p class="project-skills">
+                    Technologies used: Angular, HTML, CSS, TypeScript and Handtrack.js
+                </p>
+            </div>
+        </div>
+        <div class="project-separator">
+            <h1>*****</h1>
+        </div>
+        <div class="project-section">
+            <div class="project-visual">
+                <img id="spotify-pic" src="Spotify_Website_pic.png">
+                <h3>Spotify API Website</h3>
+            </div>
+            <div class="project-description">
+                <p>
+                    Spotify API Website is a web application that displays Spotify's API service to populate Artist, Album, and Track data. The
+                    user can make a search for a particular Artist, Album, or Track and the website will display all relevant information. For example,
+                    the image on the left shows the Artist page that displays Drakes data such as genres and top tracks. 
+                </p>
+                <ul>
+                    <li>Built a Spotify API website using Spotify API's service</li>
+                    <li>Worked primarily with Front-end development</li>
+                </ul>
+                <p class="project-skills">
+                    Technologies used: Angular, HTML, CSS, TypeScript and Spotify API
+                </p>
+            </div>
+        </div>
+        <div class="project-separator">
+            <h1>*****</h1>
+        </div>
+        <div class="project-section">
+            <div class="project-visual">
+                <img id="flashcard_gif" src="flashcard_img.gif">
+                <h3>Flashcard IOS App</h3>
+            </div>
+            <div class="project-description">
+                <p>
+                    Flashcard IOS App is a simple yet intuitive app that allows the user to create and test their knowledge on their
+                    existing flashcards. The app starts with a splash page that leads to the home page where users interact with the app. 
+                    Flashcards are created with pop ups and flashcards are saved to disk so that next time the user opens the app, then 
+                    their flashcards will appear. 
+                </p>
+                <ul>
+                    <li>Built Flashcard IOS app with Swift and Xcode</li>
+                    <li>Worked primarily with Front-end development</li>
+                </ul>
+                <p class="project-skills">
+                    Technologies used: Swift
+                </p>
+            </div>
+        </div>
+        <div class="project-separator">
+            <h1>*****</h1>
+        </div>
+        <div id="resume">
+            <hr>
+            <div class="section-title">
+                <h1><u>Resume</u></h1>
+            </div>
+            <object data="resume.pdf" type="application/pdf" width="100%" height="700vh">
+                <p>Unable to display PDF file. <a href="resume.pdf">Download</a> instead.</p>
+            </object>
+        </div>
+        <div class="project-separator">
+            <h1>*****</h1>
+        </div>
+
+    </div>
+    
+</body>
+</html>
